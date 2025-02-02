@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <meta name="robots" content="noindex"/>
 <style>body {visibility: hidden;}</style>
-<a href="/">Go back</a>
+<a href="../">Go back</a>
 <p id="foundLabel">Loading...</p>
 <script>
 (async () => {
-    const json = await fetch("/list.json");
+    const json = await fetch("../list.json");
     return await json.json();
 })().then((list) => {
 //Search logic
@@ -14,7 +14,7 @@ var found = 0;
 list.forEach((doc) => {
     if (doc.join("").toLowerCase().includes(query) || query === "all") {
         const link = document.createElement("a");
-        link.href = "/doc/#" + doc[1]+"&"+doc[0]+"&"+doc[2];
+        link.href = "../doc/#" + doc[1]+"&"+doc[0]+"&"+doc[2];
         link.textContent = doc[0];
         document.body.appendChild(link);
         document.body.appendChild(document.createElement("br"))
@@ -32,7 +32,7 @@ if (found == 0) {
 document.title = query + " | Search Kindliing"
 //Insert include.js after everything's been loaded
 const include = document.createElement("script");
-include.src = "/include.js";
+include.src = "../include.js";
 document.body.appendChild(include);
 });
 </script>

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Bookerly";
-    src: url("/bookerly.ttf") format("truetype")
+    src: url("https://kindliing.github.io/Kindliing/bookerly.ttf") format("truetype")
 }
 body {
     font-family: "Bookerly", serif;
