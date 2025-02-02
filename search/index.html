@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex"/>
+<style>body {visibility: hidden;}</style>
+<a href="/">Go back</a>
+<p id="foundLabel">Loading...</p>
+<script>
+(async () => {
+    const json = await fetch("/list.json");
+    return await json.json();
+})().then((list) => {
+//Search logic
+const query = decodeURIComponent(window.location.hash.substring(1).toLowerCase());
+var found = 0;
+list.forEach((doc) => {
+    if (doc.join("").toLowerCase().includes(query) || query === "all") {
+        const link = document.createElement("a");
+        link.href = "/doc/#" + doc[1]+"&"+doc[0]+"&"+doc[2];
+        link.textContent = doc[0];
+        document.body.appendChild(link);
+        document.body.appendChild(document.createElement("br"))
+        found++;
+    }
+});
+const label = document.getElementById("foundLabel")
+if (found == 0) {
+    label.textContent = "No results found for '" + query + "' on Kindliing!";
+} else if (found == 1) {
+    label.textContent = "1 result found for '" + query + "' on Kindliing:";
+} else {
+    label.textContent = found + " results found for '" + query + "' on Kindliing:";
+}
+document.title = query + " | Search Kindliing"
+//Insert include.js after everything's been loaded
+const include = document.createElement("script");
+include.src = "/include.js";
+document.body.appendChild(include);
+});
+</script>

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Bookerly";
+    src: url("/bookerly.ttf") format("truetype")
+}
+body {
+    font-family: "Bookerly", serif;
+    font-size: 3vw;
+    text-align: center;
+    visibility: visible;
+}
+a {
+    color: dimgray;
+}
+#copyright {
+    display: inline-block;
+}
+footer {
+    align-content: center;
+    bottom: 0;
+    color: #24292f;
+    position: absolute;
+    width: 100%;
+}
+#github {
+    height: 4vw;
+    bottom: 0.5vw;
+}
+h1 {
+    font-size: 4.3vw;
+}
+img {
+    height: 40vh;
+}
+input {
+    font-family: "Bookerly", serif;
+    font-size: 3vw;
+    outline-width: 0px;
+    width: 90vw;
+}
+::selection {
+    background-color: lightgray;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<title>Kindliing</title>
+<style>
+    body {visibility: hidden;}
+    #js {visibility: visible;}
+</style>
+<div id="js">
+    <h1>You must enable JavaScript to use Kindliing properly!</h1>
+    <h4>Q: Why do I need to enable JavaScript? That makes my Kindle lag out.</h4>
+    A: JavaScript is needed for Kindliing to search things and insert styling.
+    <h4>Q: Alright, but how do I enable it?</h4>
+    A: Tap the triple dots next to the URL bar and then tap "Browser Settings." Then tap "Enable JavaScript."
+</div>
+<img src="img/logo.svg" alt="Kindliing logo">
+<h1>Welcome to Kindliing, the free Kindle library!</h1>
+<input id="search" type="text" placeholder="Search for a document and start reading!" autocomplete="off"><br>
+<a href="search/#all">Show all documents</a>
+<script>
+document.getElementById("js").remove();
+document.getElementById("search").addEventListener("change", (e) => {
+    window.location.href = "search#" + e.target.value;
+});
+</script><script src="include.js"></script>

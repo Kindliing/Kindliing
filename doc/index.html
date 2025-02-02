@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex"/>
+<style>body {visibility: hidden;}</style>
+<a href="/">Home page</a><br>
+<a id="dl">Download this document</a>
+<script>
+const doc = decodeURIComponent(window.location.hash.substring(1)).split("&");
+document.getElementById("dl").href = doc[0] + ".azw3";
+document.body.insertAdjacentHTML("beforeend", "<br>" + doc[1] + "<br>License: "+ doc[2] +
+'<br><img src="' +  doc[0] + '.jpg" alt="Cover" onerror="this.onerror=null; this.src=\'/img/logo.svg\';">');
+const title = document.createElement("title")
+title.textContent = doc[1] + " on Kindliing"
+document.head.appendChild(title)
+</script><script src="/include.js"></script>
