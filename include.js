@@ -6,7 +6,7 @@ document.body.insertAdjacentHTML("beforeend", `
 <footer>
 <p id="copyright">Loading footer...</p>
 <a href="https://github.com/Kindliing/Kindliing/">
-<img id="github" src="/img/github.svg" alt="GitHub Logo">
+<img id="github" src="/Kindliing/img/github.svg" alt="GitHub Logo">
 </a></footer>`);
 const year = (new Date).getFullYear();
 if (year == 2025) {
