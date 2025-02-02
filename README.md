@@ -1,4 +1,4 @@
-<p align="center"><a href="https://kindliing.github.io/Kindliing/"><img src="img/logo.svg" alt="Kindliing logo" height="300"></p>
+<p align="center"><a href="https://kindliing.github.io/Kindliing/"><img src="img/logo.png" alt="Kindliing logo" height="300"></p>
 Kindliing is a free Kindle library where you can browse and download free e-books right on your Kindle!
 
 ## Why you should use Kindliing
