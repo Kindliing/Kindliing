@@ -1,11 +1,12 @@
-[<p align="center"><img src="img/logo.svg" alt="Kindliing logo" height="300"></p>](https://kindliing.github.io)
+<p align="center"><a href="https://kindliing.github.io/Kindliing/"><img src="img/logo.svg" alt="Kindliing logo" height="300"></p>
 Kindliing is a free Kindle library where you can browse and download free e-books right on your Kindle!
+
 ## Why you should use Kindliing
 Contrary to other free e-book websites, Kindliing is made especially to work on the Kindle's web browser. That means that you can browse and download books right on your Kindle with little to no problems! Just make sure that you have a good Wi-Fi connection.
 ## How to open Kindliing on your Kindle
 1. Open your Kindle's home page and tap on the triple dots at the top right.
 2. Tap on "Web Browser." On older Kindle versions, it might be called "Experimental Browser" instead.
-3. Once the browser has loaded, tap on the address bar at the top. Using the on-screen keyboard, type in `kindliing.github.io` and press enter.
+3. Once the browser has loaded, tap on the address bar at the top. Using the on-screen keyboard, type in `kindliing.github.io/kindliing` and press enter.
 4. You should be there once it has loaded! If you want to, you can tap on the triple dots again in the browser and then tap "Bookmark this page" so that you can access Kindliing more easily later.
 5. You should see a search bar labeled "Search for a document and start reading!" Tap on that and the on-screen keyboard should show up again. Type in what you want to read, and then press enter. Keep in mind that Kindliing is still very small, so it might not have the thing that you want to read at the moment.
 6. It might take a few seconds to load the results because Kindle browsers are typically slower than regular browsers. Once it loads, you will see a list of what you searched for, or you might see that there were no results. If nothing you search yields any results, go to the home page and tap on "Show all documents" to view the entire catalog.
@@ -27,7 +28,5 @@ If you want to put your book on the Kindle store for other people to download bu
     ```json
     ["The Title of the Tutorial - Kindliing","title_of_the_tutorial","CC BY 4.0"],
     ```
-    The license CC BY 4.0 (Creative Commons Attribution 4.0) was used in this example, but you can use any license you want for your document, as long as you don't put "All Rights Reserved"—remember, this library is supposed to be free! Repeat this format in *new lines* for all the documents you're publishing.
-    > [!IMPORTANT]
-    > If you're adding a series to Kindliing/adding more books from a series, make sure they're in order on the `list.json` so readers can find them better!
-6. *Open your pull request.* Make sure to save your changes to `list.json`. Then in GitHub Desktop, there should be an option to make a pull request. Click that, and follow the instructions there. Once you've made your pull request, Kindliing staff will review it. If you did everything right, it should be approved and pushed to the main repo soon!
+    The license CC BY 4.0 (Creative Commons Attribution 4.0) was used in this example, but you can use any license you want for your document, as long as you don't put "All Rights Reserved"—remember, this library is supposed to be free! Repeat this format in *new lines* for all the documents you're publishing. If you're adding a series to Kindliing/adding more books from a series, make sure they're in order on the `list.json` so readers can find them better!
+7. *Open your pull request.* Make sure to save your changes to `list.json`. Then in GitHub Desktop, there should be an option to make a pull request. Click that, and follow the instructions there. Once you've made your pull request, Kindliing staff will review it. If you did everything right, it should be approved and pushed to the main repo soon!
