@@ -6,7 +6,7 @@ Contrary to other free e-book websites, Kindliing is made especially to work on 
 ## How to open Kindliing on your Kindle
 1. Open your Kindle's home page and tap on the triple dots at the top right.
 2. Tap on "Web Browser." On older Kindle versions, it might be called "Experimental Browser" instead.
-3. Once the browser has loaded, tap on the address bar at the top. Using the on-screen keyboard, type in `kindliing.github.io/kindliing` and press enter.
+3. Once the browser has loaded, tap on the address bar at the top. Using the on-screen keyboard, type in `kindliing.github.io/Kindliing` (case-sensitive!) and press enter.
 4. You should be there once it has loaded! If you want to, you can tap on the triple dots again in the browser and then tap "Bookmark this page" so that you can access Kindliing more easily later.
 5. You should see a search bar labeled "Search for a document and start reading!" Tap on that and the on-screen keyboard should show up again. Type in what you want to read, and then press enter. Keep in mind that Kindliing is still very small, so it might not have the thing that you want to read at the moment.
 6. It might take a few seconds to load the results because Kindle browsers are typically slower than regular browsers. Once it loads, you will see a list of what you searched for, or you might see that there were no results. If nothing you search yields any results, go to the home page and tap on "Show all documents" to view the entire catalog.
